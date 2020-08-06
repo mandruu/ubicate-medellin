@@ -1,0 +1,86 @@
+a:hover {
+  text-decoration: none;
+  color : #e3dfc8;
+}
+
+a{
+  color: white;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+
+p{
+  font-size: 1.5rem;
+  color: #e3dfc8;
+}
+
+.bckgrnd-red{
+  background-color: #d92027;
+  color : white;
+  padding: 10% 15% 7%;
+}
+
+.bckgrnd-pie{
+  background-color: #d92027;
+  color : white;
+  padding: 0%   15%  0%  7%;
+}
+
+
+.centrar{
+  text-align: center;
+}
+
+.color{
+  color: #d92027;
+}
+
+.container-fluid1{
+  padding: 0% 15% 7%;
+}
+
+.esp-bot{
+  padding-bottom: 5%;
+}
+.esp-top{
+  padding-top: 5%;
+}
+
+.logo{
+  font-family: 'Ubuntu', sans-serif;
+  color: #d92027;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.medellin-img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.mover-cen{
+  text-align: right;
+}
+
+.titulo{
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #d92027;
+}
+
+#mapid{
+   height: 180px;
+   width: 180px;
+}
+#title{
+  background-color: white;
+}

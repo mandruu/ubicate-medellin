@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ubícate en Medellín</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/pin.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid1">
+
+
+      <!-- Navegacion -->
+
+      <nav class="navbar  navbar-expand-lg  navbar-dark  ">
+        <a class="navbar-brand logo" href=""><img src="images/logo.png" alt="Parque Explora"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon hamburger"></span>
+        </button>
+        <div class="collapse navbar-collapse color" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="#medellin">
+                <p class="color">Medellin</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="#mapa">
+                <p class="color">Mapa</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color" href="#pie">
+                <p class="color">Visitanos</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Titulo -->
+      <div class="row">
+        <div class="col-lg-12 centrar">
+          <h1 class="titulo"><strong>Bienvenidos a la ciudad de la eterna primavera</strong></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Medellin -->
+  <div class="bckgrnd-red">
+    <section id="medellin">
+      <div class="row">
+        <div class="col-lg-4 centrar">
+          <img class="medellin-img" src="images/botero.jpg" alt="plaza botero">
+        </div>
+        <div class="col-lg-8 ">
+          <h3><strong>Plaza Botero</strong></h3>
+          <p>23 esculturas de bronce con el sello inconfundible del maestro convierten el espacio en el más bello de los museos al aire libre, La Plaza Botero está ubicada en un entorno ideal porque compone junto con el Museo de Antioquia y el
+            Palacio de la Cultura Rafael Uribe Uribe un espacio de esencia artística que invita a todos, propios y extraños a sensibilizarse con la creación excelsa.</p>
+
+        </div>
+      </div>
+
+      <div class="row esp-top">
+        <div class="col-lg-8 ">
+          <h3 class=""><strong>Pueblito paisa</strong></h3>
+          <p>El Pueblito Paisa representa cualquier pueblo de Antioquia. Está construido como se construían los pueblos antiguamente. Cuenta con una plaza en piedra, una fuente, una iglesia, una casa cural, la alcaldía, la barbería y la escuela, que
+            son característicos de los pueblos tradicionales.</p>
+
+        </div>
+        <div class="col-lg-4 centrar">
+          <img class="medellin-img" src="images/pueblito-paisa.jpg" alt="pueblito paisa">
+        </div>
+
+      </div>
+
+      <div class="row esp-top">
+        <div class="col-lg-4 centrar">
+          <img class="medellin-img" src="images/parque-luces.jpg" alt="plaza botero">
+        </div>
+        <div class="col-lg-8 ">
+          <h3><strong>Parque de las luces</strong></h3>
+          <p>La plaza de Cisneros o parque de las Luces es una plaza ubicada en Medellín, Colombia. Lleva su nombre en homenaje al ingeniero cubano Francisco Javier Cisneros precursor del Ferrocarril de Antioquia. Se localiza entre la Biblioteca EPM,
+            los Edificios Vásquez y Carré y la Estación del Ferrocarril. En 2002 fue remodelada y desde entonces presenta su aspecto actual.</p>
+
+        </div>
+      </div>
+  </div>
+
+  </section>
+
+  <section id="mapa">
+    <div class="container-fluid1">
+
+      <!-- Mapa -->
+
+      <h3 class="titulo centrar esp-top "><strong>Marca tus lugares favoritos!</strong></h3>
+      <h5 class="centrar esp-bot color">Doble click para agregar un marcador nuevo </h5>
+      <div id="myMap" class-"" style="height: 600px"></div>
+    </div>
+  </section>
+
+  <section id="pie">
+    <div class="bckgrnd-pie">
+
+      <!-- Pie -->
+
+      <h3 class="centrar esp-top "><strong><a href="https://parqueexplora.org/">parqueexplora.org</a></strong></h3>
+      <h5 class="centrar esp-bot">@ 2020 PARQUE EXPLORA | TODOS LOS DERECHOS RESERVADOS</h5>
+
+    </div>
+  </section>
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+     integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+     crossorigin=""></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
