@@ -55,6 +55,14 @@ p{
   padding-top: 5%;
 }
 
+.ocul-most{
+  display: none;
+}
+
+.most-ocul{
+  display: block;
+}
+
 .logo{
   font-family: 'Ubuntu', sans-serif;
   color: #d92027;
@@ -83,4 +91,53 @@ p{
 }
 #title{
   background-color: white;
+}
+
+@media (max-width: 1050px){
+
+  h2{
+    font-size: 4rem;
+    line-height: 3.6rem;
+  }
+  h3{
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+  }
+
+  p{
+    font-size: 2.5rem;
+    color: #e3dfc8;
+  }
+
+  .fuente-cel{
+      font-size: 2.0rem;
+  }
+
+  .fuente-cel{
+      font-size: 1.5rem;
+  }
+  .most-ocul{
+    display: none;
+  }
+
+  .medellin-img{
+    width: 100%;
+    border-radius: 50%;
+    padding: 5%;
+  }
+
+  .ocul-most{
+    display: block;
+  }
+
+  .titulo{
+    font-size: 4.5rem;
+    line-height: 1.5;
+    color: #d92027;
+  }
+
+  #mapid{
+     height: 480px;
+     width: 480px;
+  }
 }

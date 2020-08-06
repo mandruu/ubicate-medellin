@@ -24,7 +24,7 @@ myMap.doubleClickZoom.disable()
 
 myMap.on('dblclick', e => {
   let latLng = myMap.mouseEventToLatLng(e.originalEvent);
-  marker4 = L.marker([latLng.lat, latLng.lng]).bindPopup("  <table><tr><td><label for='fname' class='color'>Titulo:</label></td><td><input type='text' id='fname' name='fname'></td></tr><tr><td><label for='fname' class='color'>Contenido:</label></td><td><input type='text' id='fname2' name='fname2'></td></tr><tr><td><label for='fname' class='color'>Url Imagen:</label></td><td><input type='text' id='fname3' name='fname3'></td></tr><tr><td colspan='2' class='centrar'><button type='button' onclick='myFunction()' class='btn btn-danger'>Guardar</button></td></tr></table>").addTo(myMap).openPopup();
+  marker4 = L.marker([latLng.lat, latLng.lng]).bindPopup("  <table><tr><td><label for='fname' class='color fuente-cel'>Titulo:</label></td><td><input type='text' class='fuente-cel2' id='fname' name='fname'></td></tr><tr><td><label for='fname' class='color fuente-cel'>Contenido:</label></td><td><input type='text' id='fname2' class='fuente-cel2' name='fname2'></td></tr><tr><td><label for='fname' class='color fuente-cel'>Url Imagen:</label></td><td><input type='text' id='fname3' class='fuente-cel2' name='fname3'></td></tr><tr><td colspan='2' class='centrar'><button type='button' onclick='myFunction()' class='btn btn-danger fuente-cel'>Guardar</button></td></tr></table>").addTo(myMap).openPopup();
 
 })
 
@@ -33,7 +33,6 @@ function myFunction() {
   var titulo = document.getElementById("fname").value;
   var contenido = document.getElementById("fname2").value;
   var imagen = document.getElementById("fname3").value;
-  alert(titulo);
   if (eval != "") {
     marker4.bindPopup("<b>"+titulo+"</b><br>"+contenido+"<img class='medellin-img esp-top' src='"+imagen+"' alt='Imagen'>").openPopup();
   }
